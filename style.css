@@ -301,7 +301,7 @@ body{
 .calender-section {
     text-align: center;
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
 }
 
 .calender-h1 {
@@ -839,6 +839,11 @@ body{
 .booking-hero {
     height: calc(100vh - 108px);
 }
+.booking-hero .section-title::after,
+.booking-hero .section-title::before {
+    width: 300px;
+}
+
 .Bookinghero-Rimg,
 .Bookinghero-Limg {
     position: absolute;
@@ -1053,26 +1058,30 @@ body{
 /* carousel */
 .carousel-container {
     width: 100%;
-}
-
-.carousel-container .swiper {
     display: flex;
     align-items: center;
-    /* gap: 20px; */
-    /* justify-content: space-between; */
+    gap: 20px;
+    justify-content: space-between;
 }
 
-.carousel-container .swiper .swiper-wrapper {
-    width: 70%;
+.carousel-container .swiper.latest-workshps-carousel{
+    width: 90%;
 }
 
 .carousel-next-btn,
 .carousel-prev-btn {
     width: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
 }
 .carousel-next-btn img,
 .carousel-prev-btn img {
     max-width: 100%;
+}
+.carousel-next-btn:hover,
+.carousel-prev-btn:hover {
+    opacity: 1;
 }
 
 .swiper-container {
@@ -1083,7 +1092,7 @@ body{
     width: 80%;
 }
 
-.swiper-slide {
+.img-slide.swiper-slide {
     aspect-ratio: 0.84;
     display: flex;
     background: #eee;
@@ -1095,29 +1104,39 @@ body{
     z-index: 10;
     overflow: hidden;
 }
-.swiper-slide.swiper-slide-next,
-.swiper-slide.swiper-slide-prev{
+.img-slide.swiper-slide.swiper-slide-next,
+.img-slide.swiper-slide.swiper-slide-prev{
     z-index: 20;
     scale: 0.65;
 }
 
-.swiper-slide.swiper-slide-active {
+.img-slide.swiper-slide.swiper-slide-active {
     scale:0.8;
     position: relative;
     z-index: 30;
 }
 
-.swiper-slide__content {
-    height: 300px;
-}
-/* carousel end */
+
+
 
 .img-slide img{
     object-fit: fill;
     width: 100%;
 }
 
-
+.activity-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: start;
+    font-weight: 500;
+}
+.activity-slide img{
+    width: 100%;
+    max-width: 100%;
+}
+/* carousel end */
 
 
 
@@ -1266,3 +1285,76 @@ body{
     
 }
 
+
+
+
+
+
+/* discover grid */
+
+.discover-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+}
+.discover-grid-cell{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+    cursor: pointer;
+}
+.discover-grid-cell p{
+    padding: 2px 8px;
+    color: white;
+    background-color: blue;
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 28px;
+}
+.discover-grid-cell img{
+    position: absolute;
+    object-fit: cover;
+    inset: 0;
+    height: 100%;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: saturate(0%);
+    transition: 0.3s;
+    max-width: 100%;
+}
+
+.discover-grid-cell:hover img{
+    filter: saturate(100%);
+}
+.discover-grid-cell.span-half{
+    grid-column-start: span 6;
+}
+.discover-grid-cell.span-third{
+    grid-column-start: span 4;
+}
+
+
+/* discover grid end */
+
+
+
+
+
+.calendar-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calendar-home .calendar{
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: 35px repeat(5,55px);
+    border: 1px solid black;
+}

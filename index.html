@@ -1,326 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Naive</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Naive</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slider.css">
-</head>
+    <body>
+        <!-- start of nav-bar -->
 
-<body>
-    <!-- start of nav-bar -->
-
-    <!-- start of nav-bar -->
-    <div class="header">
-        <div class="logo-container">
-            <div class="nav-logo">
-                <img src="images\naive-black-logo.png" alt="">
+        <!-- start of nav-bar -->
+        <div class="header">
+            <div class="logo-container">
+                <div class="nav-logo">
+                    <img src="images\naive-black-logo.png" alt="" />
+                </div>
+            </div>
+            <div class="Nav-container">
+                <nav class="Nav-bar-home">
+                    <ul class="Nav-ul-home">
+                        <li class="Nav-elements-home"><a href="#">Home</a></li>
+                        <li class="Nav-elements-home">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="Booking.html">Activities</a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="shop.html">Shop</a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="index.html">Contact Us</a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="search.html"
+                                ><img src="images/Search.png" height="20px"
+                            /></a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="pp.html"
+                                ><img
+                                    src="images/Profileicon.png"
+                                    height="20px"
+                            /></a>
+                        </li>
+                        <li class="Nav-elements-home">
+                            <a href="cart.html"
+                                ><img src="images/Buyicon.png" height="20px"
+                            /></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="Nav-container">
-            <nav class="Nav-bar-home">
-                <ul class="Nav-ul-home">
-                    <li class="Nav-elements-home"><a href="#">Home</a></li>
-                    <li class="Nav-elements-home"><a href="about.html">About Us</a></li>
-                    <li class="Nav-elements-home"><a href="Booking.html">Activities</a></li>
-                    <li class="Nav-elements-home"><a href="shop.html">Shop</a></li>
-                    <li class="Nav-elements-home"><a href="gallery.html">Gallery</a></li>
-                    <li class="Nav-elements-home"><a href="index.html">Contact Us</a></li>
-                    <li class="Nav-elements-home"><a href="search.html"><img src="images/Search.png" height="20px"></a>
-                    </li>
-                    <li class="Nav-elements-home"><a href="pp.html"><img src="images/Profileicon.png" height="20px"></a>
-                    </li>
-                    <li class="Nav-elements-home"><a href="cart.html"><img src="images/Buyicon.png" height="20px"></a>
-                    </li>
-                </ul>
-            </nav>
+        <!-- end of nav-bar -->
 
-        </div>
-    </div>
-    <!-- end of nav-bar -->
+        <!-- start of Starthero -->
 
-
-    <!-- start of Starthero -->
-
-
-    <div class="hero-section">
-        <div class="hero-content">
-            <h1 class="Hero-h1">Welcome to<h1 class="Hero-h1-Naive"> Naive! </h1>
-            </h1>
-            <p class="Hero-p">Naive is a great place to unleash your creativity,
-                express yourself with our artistic workshops,
-                and a great place to meet other artists and creatives.
-                We offer a variety of art workshops...etc.</p>
-            <a href="about.html"><button class="Hero-btn">Learn more </button></a>
-        </div>
-        <div class="hero-image">
-            <img src="images\homeHero.png" alt="Hero Image">
-        </div>
-    </div>
-
-
-    <!-- end of start hero -->
-
-    <!-- start of gallery section -->
-    <section class="gallery-section">
-        <div class="gallery-content">
-            <h1 class="h1-Gallery">Gallery</h1>
-            <a href="gallery.html"><button class="Gallerybtn">View More</button></a>
-        </div>
-    </section>
-    <!-- end of gallery section -->
-
-
-
-    <!-- start of walkin activities  -->
-
-
-    <div class="activities-section">
-        <div class="act-content">
-            <h1 class="act-h1">Walk-in Activities</h1>
-            <p class="act-p">Not Sure when you’re free to book? You can now pass by anytime during our opening times
-                to do any activity of your choice whenever you please to. Check out the activities that
-                you can do!</p>
-            <button class="act-button">Learn more</button>
-        </div>
-        <div class="act-image">
-            <img src="images\walk-in.png" alt="Activities Image">
-        </div>
-    </div>
-
-
-
-    <!-- end of walkin activities -->
-
-    <!-- start of calender -->
-    <div class="calender-section">
-
-        <h1 class="calender-h1">Calendar</h1>
-
-    </div>
-
-    <!-- end of calender  -->
-
-
-    <!-- start of SpaceRental -->
-    <div class="SpaceRental-section">
-
-        <h1 class="SpaceRental-h1">Space Rental</h1>
-
-        <div class="Space-content">
-            <div class="Space-content-item1">
-                <h2>Private Event</h2>
-                <p>Book the space for a birthday party, baby shower, bachelor, book the space for a birthday party,
-                    baby shower, bachelor, Book the space for a birthday party, baby </p>
-                <a href="Booking.html"> <button> Book Now</button></a>
-            </div>
-            <div class="Space-content-item2">
-                <h2>Give a Workshop</h2>
-                <p>
-                    Want to give a workshop and have no place? You can now do that at Naive!
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="Hero-h1">
+                    Welcome to
+                    <h1 class="Hero-h1-Naive">Naive!</h1>
+                </h1>
+                <p class="Hero-p">
+                    Naive is a great place to unleash your creativity, express
+                    yourself with our artistic workshops, and a great place to
+                    meet other artists and creatives. We offer a variety of art
+                    workshops...etc.
                 </p>
-                <a href="Booking.html"> <button> Book Now</button></a>
-
-
-
+                <a href="about.html"
+                    ><button class="Hero-btn">Learn more</button></a
+                >
+            </div>
+            <div class="hero-image">
+                <img src="images\homeHero.png" alt="Hero Image" />
             </div>
         </div>
-        <div class="starLSpace-container"><img class="SpaceSatrL" src="images/spaceRentalLeft.png" alt=""></div>
-        <div class="starRSpace-container"><img class="SpaceSatrR" src="images/spaceRentalRight.png" alt=""></div>
-    </div>
 
-    <!-- end of SpaceRental  -->
+        <!-- end of start hero -->
 
-
-    <!-- start of best sellers  -->
-
-
-
-    <div class="BestSeller-section">
-        <h1 class="BestSeller-h1">Bestsellers</h1>
-        <div class="BestSeller-slider">
-
-            <div class="carousel">
-                <a class="carousel-item" href="#">
-                    <div class="testi">
-                        <div class="img-area">
-                            <img class="image" src="images/sliderPosterts.png">
-                        </div>
-                        <h4>Posters</h4>
-                        <button>view all</button>
-                    </div>
-                </a>
-                <a class="carousel-item" href="#">
-                    <div class="testi">
-                        <div class="img-area">
-                            <img src="images/slidersexiplexi.png">
-                        </div>
-                        <h4>Sexi-Plexi</h4>
-                        <button>view all</button>
-                    </div>
-                </a>
-                <a class="carousel-item" href="#">
-                    <div class="testi">
-                        <div class="img-area">
-                            <img src="images/slidercandle.png">
-                        </div>
-                        <h4>Candles</h4>
-                        <button>view all</button>
-                    </div>
-                </a>
-
-
+        <!-- start of gallery section -->
+        <section class="gallery-section">
+            <div class="gallery-content">
+                <h1 class="h1-Gallery">Gallery</h1>
+                <a href="gallery.html"
+                    ><button class="Gallerybtn">View More</button></a
+                >
             </div>
+        </section>
+        <!-- end of gallery section -->
 
+        <!-- start of walkin activities  -->
 
+        <div class="activities-section">
+            <div class="act-content">
+                <h1 class="act-h1">Walk-in Activities</h1>
+                <p class="act-p">
+                    Not Sure when you’re free to book? You can now pass by
+                    anytime during our opening times to do any activity of your
+                    choice whenever you please to. Check out the activities that
+                    you can do!
+                </p>
+                <button class="act-button">Learn more</button>
+            </div>
+            <div class="act-image">
+                <img src="images\walk-in.png" alt="Activities Image" />
+            </div>
+        </div>
 
+        <!-- end of walkin activities -->
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    $('.carousel').carousel({
-                        padding: 200
+        <!-- start of calender -->
+        <div class="calender-section">
+            <h1 class="calender-h1">Calendar</h1>
+        </div>
+        <div class="calendar-home">
+            <h1 style="font-size: 20px;">December Schedule</h1>
+            <div>
+                <div class="calendar">
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">SUN</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">MON</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">TUE</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">WED</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">THU</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">FRI</span>
+                    </div>
+                    <div class="calendar-cell calendar-header">
+                        <span class="calendar-weekday">SAT</span>
+                    </div>
 
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div
+                        class="calendar-cell calendar-cell-filled1"
+                        id="linogravure-cell"
+                    >
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Linogravure</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled2">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Sewing Session</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled2">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text">Tie-Dye</span>
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled1">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Paint and Drink</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div
+                        class="calendar-cell calendar-cell-filled1"
+                        id="nude-sculpting-cell"
+                    >
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Nude Sculpting</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled1">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text">Weaving</span>
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled1">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Linogravure</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled1">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Tote Bags Painting</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell calendar-cell-filled2">
+                        <div class="calendar-cell-inner">
+                            <span class="calendar-cell-inner-text"
+                                >Silk Screen</span
+                            >
+                            <span class="calendar-cell-inner-text">6 to 8 p.m</span>
+                        </div>
+                    </div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                    <div class="calendar-cell"></div>
+                </div>
+                <div class="calendar-legend">
+                    <div class="calendar-legend-new-classes-section">
+                        <span class="calendar-legend-new-classes-circle"></span>
+                        <span class="calendar-legend-new-classes">New Classes</span>
+                    </div>
+                    <span class="calendar-legend-closing-message"
+                        >*We close on <b>Sundays & Mondays</b></span
+                    >
+                </div>
+            </div>
+        </div>
+
+        <!-- end of booking hero  -->
+
+        <!-- end of calender  -->
+
+        <!-- start of SpaceRental -->
+        <div class="SpaceRental-section">
+            <h1 class="SpaceRental-h1">Space Rental</h1>
+
+            <div class="Space-content">
+                <div class="Space-content-item1">
+                    <h2>Private Event</h2>
+                    <p>
+                        Book the space for a birthday party, baby shower,
+                        bachelor, book the space for a birthday party, baby
+                        shower, bachelor, Book the space for a birthday party,
+                        baby
+                    </p>
+                    <a href="Booking.html"> <button>Book Now</button></a>
+                </div>
+                <div class="Space-content-item2">
+                    <h2>Give a Workshop</h2>
+                    <p>
+                        Want to give a workshop and have no place? You can now
+                        do that at Naive!
+                    </p>
+                    <a href="Booking.html"> <button>Book Now</button></a>
+                </div>
+            </div>
+            <div class="starLSpace-container">
+                <img
+                    class="SpaceSatrL"
+                    src="images/spaceRentalLeft.png"
+                    alt=""
+                />
+            </div>
+            <div class="starRSpace-container">
+                <img
+                    class="SpaceSatrR"
+                    src="images/spaceRentalRight.png"
+                    alt=""
+                />
+            </div>
+        </div>
+
+        <!-- end of SpaceRental  -->
+
+        <!-- start of best sellers  -->
+
+        <div class="BestSeller-section">
+            <h1 class="BestSeller-h1">Bestsellers</h1>
+            <div class="BestSeller-slider">
+                <div class="carousel">
+                    <a class="carousel-item" href="#">
+                        <div class="testi">
+                            <div class="img-area">
+                                <img
+                                    class="image"
+                                    src="images/sliderPosterts.png"
+                                />
+                            </div>
+                            <h4>Posters</h4>
+                            <button>view all</button>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="#">
+                        <div class="testi">
+                            <div class="img-area">
+                                <img src="images/slidersexiplexi.png" />
+                            </div>
+                            <h4>Sexi-Plexi</h4>
+                            <button>view all</button>
+                        </div>
+                    </a>
+                    <a class="carousel-item" href="#">
+                        <div class="testi">
+                            <div class="img-area">
+                                <img src="images/slidercandle.png" />
+                            </div>
+                            <h4>Candles</h4>
+                            <button>view all</button>
+                        </div>
+                    </a>
+                </div>
+
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                <script>
+                    $(document).ready(function () {
+                        $(".carousel").carousel({
+                            padding: 200,
+                        });
+                        autoplay();
+                        function autoplay() {
+                            $(".carousel").carousel("next");
+                            // setTimeout(autoplay, 4500);
+                        }
                     });
-                    autoplay();
-                    function autoplay() {
-                        $('.carousel').carousel('next');
-                        // setTimeout(autoplay, 4500);
-                    }
-                });
-            </script>
-             <div class="starSliderR-container"><img class="starSliderR" src="images/sliderstarR.png" alt=""></div>
-             <div class="starSliderL-container"><img class="starSliderL" src="images/sliderstarL.png" alt=""></div>
-        </div>
-
-
-
-
-        <div class="Bestsellers-Banner">
-            <div class="Banner-content">
-                <h1 class="Banner-h1">Happiness is a Piece of Cake</h1>
-                <p class="Banner-p">Enjoy Cakes, Juice, Tea and Coffee at our Coffee corner </p>
-            </div>
-            <div class="Banner-image">
-                <img src="images\BannerBestSeller.png" alt="">
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-    <!-- end of best sellers  -->
-
-
-
-    <!-- start of contact us  -->
-
-    <div class="homeContact-section" id="contactus">
-        <div class="homeContact-content">
-            <h1 class="homeContact-h1">Contact Us</h1>
-        </div>
-
-        <div class="location">
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5728786081786!2d35.516706899999996!3d33.874896899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1732148d8871%3A0x5d994f74f872af23!2zTmHDr3ZlIGJ5IEVtbsOp!5e0!3m2!1sen!2sus!4v1702035884677!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+                </script>
+                <div class="starSliderR-container">
+                    <img
+                        class="starSliderR"
+                        src="images/sliderstarR.png"
+                        alt=""
+                    />
+                </div>
+                <div class="starSliderL-container">
+                    <img
+                        class="starSliderL"
+                        src="images/sliderstarL.png"
+                        alt=""
+                    />
+                </div>
             </div>
 
-        </div>
-        <div class="starContact-container"><img class="contactSatr" src="images/contactStar.png" alt=""></div>
-        <div class="contactBlue"><img src="images/contactblueTxt.png" alt="" class="contactBlueTxtimg"></div>
-        <div class="contactlocation"><img src="images/Locationicon.png" height="20px" class="contactIcons" alt="">
-            <p class="contactlocp"> Badaro Street,<br> Beirut, Lebanon </p>
-        </div>
-        <div class="contactphone"> <img src="images/Callicon.png" height="20px" class="contactIcons">
-            <p class="contactphoneP">+961 3 741 125</p>
-        </div>
-        <div class="contactTime">
-            <img src="images/Calendar.png" alt="" class="contactIcons" height="20px">
-            <p class="contactTimeP"> Tuesday till Saturday <br>
-                10:00 AM - 8:00 PM</p>
-        </div>
-    </div>
-
-
-
-
-
-
-
-    <!-- end od contact us  -->
-
-
-    <!-- Start of footer -->
-    <footer class="footer">
-        <div class="footer-column">
-
-            <div class="footer-logo"> <img src="images\naive-black-logo.png" alt=""></div>
-        </div>
-
-        <div class="footer-column">
-            <h2>About Us</h2>
-            <ul>
-                <li><a href="about.html">Our Story</a></li>
-                <li><a href="about.html#mission">Mission & Vision</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h2>Booking</h2>
-            <ul>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Workshops</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h2>Shop</h2>
-            <ul>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Best Sellers</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h2>Contact Us</h2>
-            <ul>
-                <li>Phone: [+961 3 741 125]</li>
-                <li>Badaro Street, Beirut, Lebanon</li>
-            </ul>
-        </div>
-
-        <div class="footer-column">
-            <h2>Stay in touch!</h2>
-            <div class="social">
-                <a href="https://www.facebook.com/naivebyemne?mibextid=9R9pXO">
-                    <img src="images/iconfacebook.png" height="30px" alt="">
-                </a>
-                <a class="insta" href="https://instagram.com/naivebyemne?igshid=OGQ5ZDc2ODk2ZA=="><img
-                        src="images/instaIcon.png" height="30px" alt=""></a>
+            <div class="Bestsellers-Banner">
+                <div class="Banner-content">
+                    <h1 class="Banner-h1">Happiness is a Piece of Cake</h1>
+                    <p class="Banner-p">
+                        Enjoy Cakes, Juice, Tea and Coffee at our Coffee corner
+                    </p>
+                </div>
+                <div class="Banner-image">
+                    <img src="images\BannerBestSeller.png" alt="" />
+                </div>
             </div>
         </div>
-    </footer>
 
-    <div class="Fgreen-line"></div>
+        <!-- end of best sellers  -->
 
-    <!-- end of footer -->
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <!-- start of contact us  -->
 
-    <!--js file-->
-    <script src="main.js"></script>
+        <div class="homeContact-section" id="contactus">
+            <div class="homeContact-content">
+                <h1 class="homeContact-h1">Contact Us</h1>
+            </div>
 
+            <div class="location">
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.5728786081786!2d35.516706899999996!3d33.874896899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f1732148d8871%3A0x5d994f74f872af23!2zTmHDr3ZlIGJ5IEVtbsOp!5e0!3m2!1sen!2sus!4v1702035884677!5m2!1sen!2sus"
+                        width="600"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+            <div class="starContact-container">
+                <img class="contactSatr" src="images/contactStar.png" alt="" />
+            </div>
+            <div class="contactBlue">
+                <img
+                    src="images/contactblueTxt.png"
+                    alt=""
+                    class="contactBlueTxtimg"
+                />
+            </div>
+            <div class="contactlocation">
+                <img
+                    src="images/Locationicon.png"
+                    height="20px"
+                    class="contactIcons"
+                    alt=""
+                />
+                <p class="contactlocp">
+                    Badaro Street,<br />
+                    Beirut, Lebanon
+                </p>
+            </div>
+            <div class="contactphone">
+                <img
+                    src="images/Callicon.png"
+                    height="20px"
+                    class="contactIcons"
+                />
+                <p class="contactphoneP">+961 3 741 125</p>
+            </div>
+            <div class="contactTime">
+                <img
+                    src="images/Calendar.png"
+                    alt=""
+                    class="contactIcons"
+                    height="20px"
+                />
+                <p class="contactTimeP">
+                    Tuesday till Saturday <br />
+                    10:00 AM - 8:00 PM
+                </p>
+            </div>
+        </div>
 
-</body>
+        <!-- end od contact us  -->
 
+        <!-- Start of footer -->
+        <footer class="footer">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="images\naive-black-logo.png" alt="" />
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h2>About Us</h2>
+                <ul>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about.html#mission">Mission & Vision</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h2>Booking</h2>
+                <ul>
+                    <li><a href="#">Calendar</a></li>
+                    <li><a href="#">Workshops</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Best Sellers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li>Phone: [+961 3 741 125]</li>
+                    <li>Badaro Street, Beirut, Lebanon</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h2>Stay in touch!</h2>
+                <div class="social">
+                    <a
+                        href="https://www.facebook.com/naivebyemne?mibextid=9R9pXO"
+                    >
+                        <img
+                            src="images/iconfacebook.png"
+                            height="30px"
+                            alt=""
+                        />
+                    </a>
+                    <a
+                        class="insta"
+                        href="https://instagram.com/naivebyemne?igshid=OGQ5ZDc2ODk2ZA=="
+                        ><img src="images/instaIcon.png" height="30px" alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="Fgreen-line"></div>
+
+        <!-- end of footer -->
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <!--js file-->
+        <script src="main.js"></script>
+    </body>
 </html>
