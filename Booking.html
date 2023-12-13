@@ -375,11 +375,11 @@
                 </div>
                 <div class="discover-grid-cell span-third">
                     <img src="./images/gallerHome.png"/>
-                    <p>Nude Sculpting</p>
+                    <p id="nude-sculpting-grid-btn">Nude Sculpting</p>
                 </div>
                 <div class="discover-grid-cell span-third">
                     <img src="./images/gallerHome.png"/>
-                    <p>Linogravure</p>
+                    <p id="linogravure-grid-btn">Linogravure</p>
                 </div>
                 <div class="discover-grid-cell span-half">
                     <img src="./images/gallerHome.png"/>
@@ -580,9 +580,11 @@
         <!-- popups -->
         <script>
             let linoPopup = document.querySelector("#linogravure-cell");
+            let linoGridPopup = document.querySelector("#linogravure-grid-btn");
+            let nudeSculptingGridPopup = document.querySelector("#nude-sculpting-grid-btn");
             let nudeSculpting = document.querySelector("#nude-sculpting-cell");
             let formPopup = document.querySelector("#form-popup-overlay");
-            let bookBtn = document.querySelector(".book-btn");
+            let bookBtns = document.querySelectorAll(".book-btn");
             let closeBtn = document.querySelector(".close-button");
             function openPopup(popUpName){
                 document.body.style.overflow = "hidden";
@@ -593,15 +595,24 @@
                 document.getElementById(popUpName).classList.remove("show-popup");
                 document.body.style.overflow = "auto";
             }
+            linoGridPopup.addEventListener('click', (event)=>{
+                openPopup("linogravure-popup");
+            })
+            nudeSculptingGridPopup.addEventListener('click', (event)=>{
+                openPopup("nude-sculpting-popup");
+            })
             linoPopup.addEventListener('click', (event)=>{
                 openPopup("linogravure-popup");
             })
             nudeSculpting.addEventListener('click', (event)=>{
                 openPopup("nude-sculpting-popup");
             })
-            bookBtn.addEventListener('click', (event)=>{
+            bookBtns.forEach(btn=>{
+                btn.addEventListener('click', (event)=>{
                 openPopup("form-popup-overlay");
+                })
             })
+            
             closeBtn.addEventListener('click', (event)=>{
                 closePopup("form-popup-overlay");
             })

@@ -1462,6 +1462,7 @@ body{
 }
 
 
+
 .calendar-section-grid{
     display: grid;
     align-items: start;
@@ -1483,3 +1484,4 @@ body{
 .calendar-section-grid .home-workshop .popup-description-section{
     gap: 18px;
 }
+
