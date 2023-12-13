@@ -4,12 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Naive</title>
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-        />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="slider.css" />
     </head>
 
     <body>
@@ -630,43 +625,53 @@
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
-        <!--js file-->
-               <!-- popups -->
-               <script>
-                let linoPopup = document.querySelector("#linogravure-cell");
-                let nudeSculpting = document.querySelector("#nude-sculpting-cell");
-                let formPopup = document.querySelector("#form-popup-overlay");
-                let bookBtn = document.querySelector(".book-btn");
-                let closeBtn = document.querySelector(".close-button");
-                function openPopup(popUpName){
-                    document.body.style.overflow = "hidden";
-                    document.getElementById(popUpName).classList.add("show-popup");
-                }
-                function closePopup(popUpName){
-                    
-                    document.getElementById(popUpName).classList.remove("show-popup");
-                    document.body.style.overflow = "auto";
-                }
-                linoPopup.addEventListener('click', (event)=>{
-                    openPopup("linogravure-popup");
+        <!-- popups -->
+        <script>
+            let linoPopup = document.querySelector("#linogravure-cell");
+            let linoGridPopup = document.querySelector("#linogravure-grid-btn");
+            let nudeSculptingGridPopup = document.querySelector("#nude-sculpting-grid-btn");
+            let nudeSculpting = document.querySelector("#nude-sculpting-cell");
+            let formPopup = document.querySelector("#form-popup-overlay");
+            let bookBtns = document.querySelectorAll(".book-btn");
+            let closeBtn = document.querySelector(".close-button");
+            function openPopup(popUpName){
+                document.body.style.overflow = "hidden";
+                document.getElementById(popUpName).classList.add("show-popup");
+            }
+            function closePopup(popUpName){
+                
+                document.getElementById(popUpName).classList.remove("show-popup");
+                document.body.style.overflow = "auto";
+            }
+            linoGridPopup?.addEventListener('click', (event)=>{
+                openPopup("linogravure-popup");
+            })
+            nudeSculptingGridPopup?.addEventListener('click', (event)=>{
+                openPopup("nude-sculpting-popup");
+            })
+            linoPopup.addEventListener('click', (event)=>{
+                openPopup("linogravure-popup");
+            })
+            nudeSculpting.addEventListener('click', (event)=>{
+                openPopup("nude-sculpting-popup");
+            })
+            bookBtns.forEach(btn=>{
+                btn.addEventListener('click', (event)=>{
+                openPopup("form-popup-overlay");
                 })
-                nudeSculpting.addEventListener('click', (event)=>{
-                    openPopup("nude-sculpting-popup");
+            })
+            
+            closeBtn.addEventListener('click', (event)=>{
+                closePopup("form-popup-overlay");
+            })
+            const overlays = document.querySelectorAll(".overlay");
+            overlays.forEach(overlay =>{
+                overlay.addEventListener('click', (event)=>{
+                    closePopup(event.target.id);
                 })
-                bookBtn.addEventListener('click', (event)=>{
-                    openPopup("form-popup-overlay");
-                })
-                closeBtn.addEventListener('click', (event)=>{
-                    closePopup("form-popup-overlay");
-                })
-                const overlays = document.querySelectorAll(".overlay");
-                overlays.forEach(overlay =>{
-                    overlay.addEventListener('click', (event)=>{
-                        closePopup(event.target.id);
-                    })
-                })
-    
-            </script>
+            })
+
+        </script>
 
 
 
