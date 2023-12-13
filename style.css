@@ -832,8 +832,8 @@ extrabold:  font-weight: 800;  */
 /* start of booking page  */
 
 /* booking hero */
-.booking-hero{
-  height: calc(100vh - 108px);
+.booking-hero {
+    height: calc(100vh - 108px);
 }
 .Bookinghero-Rimg,
 .Bookinghero-Limg {
@@ -855,7 +855,6 @@ extrabold:  font-weight: 800;  */
     max-width: 100%;
     display: block;
 }
-
 
 /* end of booking  hero  */
 
@@ -1024,6 +1023,80 @@ extrabold:  font-weight: 800;  */
     display: flex;
     align-items: center;
     margin-bottom: 6rem;
+    padding-inline: 140px;
     flex-direction: column;
     position: relative;
 }
+
+/* carousel */
+.carousel-container {
+    width: 100%;
+}
+
+.carousel-container .swiper {
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    /* justify-content: space-between; */
+}
+
+.carousel-container .swiper .swiper-wrapper {
+    width: 70%;
+}
+
+.carousel-next-btn,
+.carousel-prev-btn {
+    width: 20px;
+}
+.carousel-next-btn img,
+.carousel-prev-btn img {
+    max-width: 100%;
+}
+
+.swiper-container {
+    position: relative;
+}
+
+.latest-workshps-carousel {
+    width: 80%;
+}
+
+.swiper-slide {
+    aspect-ratio: 0.84;
+    display: flex;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    scale: 0.5;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+.swiper-slide.swiper-slide-next,
+.swiper-slide.swiper-slide-prev{
+    z-index: 20;
+    scale: 0.65;
+}
+
+.swiper-slide.swiper-slide-active {
+    scale:0.8;
+    position: relative;
+    z-index: 30;
+}
+
+.swiper-slide__content {
+    height: 300px;
+}
+/* carousel end */
+
+.img-slide img{
+    object-fit: fill;
+    width: 100%;
+}
+
+
+
+
+
+
