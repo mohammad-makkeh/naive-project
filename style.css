@@ -306,7 +306,7 @@ body{
 
 .calender-h1 {
     font-size: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
@@ -1266,6 +1266,17 @@ body{
     gap: 25px;
 }
 
+.popup-description-section h1{
+    background-color: blue;
+    font-size: 28px !important;
+    width: fit-content;
+    font-weight: 800;
+    padding: 8px;
+    margin: 0;
+    margin-top: 20px;
+    color: white;
+}
+
 .popup-description{
     font-size: 16px;
     text-align: justify;
@@ -1358,7 +1369,12 @@ body{
     grid-template-columns: repeat(7, 70px);
     grid-template-rows: 35px repeat(5,55px);
     border: 1px solid black;
-
+}
+.calendar-home .calendar-cell-inner{
+    font-size: 9px;
+    line-height: 1.2;
+    font-weight: bold;
+   
 }
 
 /* form popup */
@@ -1443,4 +1459,27 @@ body{
 
 #date-year{
     width: 12ch;
+}
+
+
+.calendar-section-grid{
+    display: grid;
+    align-items: start;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
+
+.calendar-section-grid .home-workshop .section-title-popup{
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.calendar-section-grid .home-workshop .popup-content{
+    gap: 30px;
+}
+.calendar-section-grid .home-workshop .popup-content img{
+    width: 148px;
+}
+.calendar-section-grid .home-workshop .popup-description-section{
+    gap: 18px;
 }
