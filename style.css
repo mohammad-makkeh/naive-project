@@ -1201,7 +1201,7 @@ body{
     display: block;
     width: 18px;
     height: 18px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: #f792ff;
 }
 
@@ -1212,7 +1212,7 @@ body{
     justify-content: center;
 }
 
-#linogravure-popup{
+#linogravure-popup, #nude-sculpting-popup, #form-popup-overlay{
     width: 100%;
     height: 100%;
     position: fixed;
@@ -1221,6 +1221,11 @@ body{
     z-index: 999;
     background-color: #2b2b2f4f;
     display: none;
+}
+
+#form-popup-overlay{
+    z-index: 1000;
+    background-color: #2b2b2f9b;
 }
 
 .popup{
@@ -1248,7 +1253,7 @@ body{
     font-weight: 500;
 }
 
-.book-btn{
+.book-btn, .register-btn{
     width: fit-content;
     padding: 8px 18px;
     background-color: #c2ff40;
@@ -1259,10 +1264,93 @@ body{
     font-weight: 500;
 }
 
-.book-btn:hover{
+.book-btn:hover, .register-btn:hover{
     background-color: white;
     outline: 2px solid #0011d4;
     cursor: pointer;
     
 }
 
+/* form popup */
+
+.form-popup{
+    width: 1100px;
+    background-color: white;
+    padding: 50px 95px;
+    overflow: hidden;
+    position: relative;
+}
+
+.close-button{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 7px;
+    background-color: #0011d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.form-popup-header{
+    width: fit-content;
+    background-color: #0011d4;
+    color: white;
+    padding: 8px 10px;
+    margin-inline: auto;
+}
+
+.form-body{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    justify-content: center;
+    padding: 0 100px;
+    gap: 40px;
+}
+
+.form-popup-info{
+
+}
+
+.form-popup-info-name{
+    display: flex;
+    gap: 16px;
+}
+
+.form-label{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-input{
+    padding: 6px 10px;
+    border: 1px solid grey;
+    width: 100%;
+    font-size: 18px;
+    box-shadow: 0 3px 4px #0005;
+}
+
+.form-input:focus{
+    outline: none;
+}
+
+.register-btn{
+    margin-inline: auto;
+    font-size: 18px;
+}
+
+.form-date{
+    display: flex;
+    gap: 12px;
+}
+
+#date-day, #date-month{
+    width: 6ch;
+}
+
+#date-year{
+    width: 12ch;
+}
