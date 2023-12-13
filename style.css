@@ -13,6 +13,10 @@ extrabold:  font-weight: 800;  */
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
 /* start of nav bar  */
 .header {
     display: flex;
@@ -1019,6 +1023,23 @@ extrabold:  font-weight: 800;  */
 .section-title::after {
     transform: translateX(10%);
 }
+.section-title-popup{
+    font-size: 40px;
+    width: 100%;
+    overflow: hidden;
+} 
+.section-title-popup::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 500px;
+    height: 3px;
+    background-color: black;
+} 
+
+.section-title-popup::before{
+    display: none;
+}
 .section-container {
     display: flex;
     align-items: center;
@@ -1027,6 +1048,7 @@ extrabold:  font-weight: 800;  */
     flex-direction: column;
     position: relative;
 }
+
 
 /* carousel */
 .carousel-container {
@@ -1099,4 +1121,148 @@ extrabold:  font-weight: 800;  */
 
 
 
+
+
+/* Calendar */
+.calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 85px);
+    grid-template-rows: 55px repeat(5,75px);
+    border: 1px solid black;
+}
+
+.calendar-cell{
+    border: 1px solid black;
+}
+
+.calendar-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-weekday{
+    width: 85%;
+    height: 75%;
+    background-color: #2b2b2f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.calendar-cell-filled1{
+    background-color: #c2ff40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.calendar-cell-filled2{
+    background-color: #f792ff ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.calendar-cell-inner{
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: bold;
+    
+}
+
+.calendar-cell-inner-text{
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.calendar-legend{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.calendar-legend-new-classes-section{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.calendar-legend-new-classes-circle{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50px;
+    background-color: #f792ff;
+}
+
+/* Popup */
+.show-popup{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+#linogravure-popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #2b2b2f4f;
+    display: none;
+}
+
+.popup{
+    width: 1000px;
+    background-color: white;
+    padding: 50px 70px;
+    overflow: hidden;
+}
+
+.popup-content{
+    display: flex;
+    width: 100%;
+    gap: 60px;
+}
+
+.popup-description-section{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.popup-description{
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.book-btn{
+    width: fit-content;
+    padding: 8px 18px;
+    background-color: #c2ff40;
+    color: black;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.book-btn:hover{
+    background-color: white;
+    outline: 2px solid #0011d4;
+    cursor: pointer;
+    
+}
 
