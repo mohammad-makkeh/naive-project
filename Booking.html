@@ -394,7 +394,7 @@
         <!-- end of Discover More Workshops -->
 
         <!-- Start of footer -->
-        <div id="linogravure-popup">
+        <div id="linogravure-popup" class="overlay">
             <div class="popup">
                 <h1 class="section-title section-title-popup">
                     Workshops Description
@@ -420,6 +420,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="nude-sculpting-popup" class="overlay">
+            <div class="popup">
+                <h1 class="section-title section-title-popup">Workshops Description</h1>
+                <div class="popup-content">
+                    <img src="images\nude-sculpting-popup.jpeg" width="245px" alt="">
+                    <div class="popup-description-section">
+                        <h1>Image goes here</h1>
+                        <span class="popup-description">In the workshop, participants will learn the art of crafting their own sculptures guided by experienced instructors. They'll explore sculpting techniques, anatomy, and hands-on molding to create unique pieces. All materials, including clay and tools, are provided for an enjoyable experience. Participants leave with completed sculptures, having gained valuable insights  about nude sculpting.</span>
+                        <button class="book-btn">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form-popup-overlay" class="overlay">
+            <form class="form-popup">
+                <div class="close-button">
+                    <img src="images\close.svg" width="12px" alt="">
+                </div>
+                <div class="form-popup-header">
+                    <h2>Please fill out the information below to complete complete your booking</h2>
+                </div>
+                <div class="form-body">
+                    <div class="form-popup-info">
+                        <label for="name" class="form-label">Name*</label>
+                        <div class="form-popup-info-name">
+                            <input type="text" name="name" id="name" placeholder="First Name" class="form-input" required="true">
+                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-input" required="true">
+                        </div>
+                    </div>
+                    <div class="form-popup-info">
+                        <label for="phone" class="form-label">Phone*</label>
+                        <input type="number" name="phone" id="phone" class="form-input" required="true">
+                    </div>
+                    <div class="form-popup-info">
+                        <label for="email" class="form-label">Email*</label>
+                        <input type="email" name="email" id="email" class="form-input" required="true">
+                    </div>
+                    <div class="form-popup-info">
+                        <label class="form-label">Date*</label>
+                        <div class="form-date">
+                            <input type="number" name="date" id="date-day" class="form-input" required="true" min="1" max="31" value="1">
+                            <input type="number" name="date" id="date-month" class="form-input" required="true" min="1" max="12" value="1">
+                            <input type="number" name="date" id="date-year" class="form-input" required="true" min="0" value="2023">
+                        </div>
+                    </div>
+                    <button class="register-btn" type="button">Register</button>
+                </div>
+                
+            </form>
         </div>
         <footer class="footer">
             <div class="footer-column">
@@ -526,21 +576,39 @@
             });
         </script>
         <script>
-            function openPopup(popUpName) {
-                console.log("fatima in", popUpName);
+            let linoPopup = document.querySelector("#linogravure-cell");
+            let nudeSculpting = document.querySelector("#nude-sculpting-cell");
+            let formPopup = document.querySelector("#form-popup-overlay");
+            let bookBtn = document.querySelector(".book-btn");
+            let closeBtn = document.querySelector(".close-button");
+            function openPopup(popUpName){
                 document.body.style.overflow = "hidden";
-                document.querySelector(popUpName).classList.add("show-popup");
+                document.getElementById(popUpName).classList.add("show-popup");
             }
-            function closePopup(popUpName) {
-                document
-                    .querySelector(popUpName)
-                    .classList.remove("show-popup");
+            function closePopup(popUpName){
+                
+                document.getElementById(popUpName).classList.remove("show-popup");
+                document.body.style.overflow = "auto";
             }
-            document
-                .querySelector("#linogravure-cell")
-                .addEventListener("click", (event) => {
-                    openPopup("#linogravure-popup");
-                });
+            linoPopup.addEventListener('click', (event)=>{
+                openPopup("linogravure-popup");
+            })
+            nudeSculpting.addEventListener('click', (event)=>{
+                openPopup("nude-sculpting-popup");
+            })
+            bookBtn.addEventListener('click', (event)=>{
+                openPopup("form-popup-overlay");
+            })
+            closeBtn.addEventListener('click', (event)=>{
+                closePopup("form-popup-overlay");
+            })
+            const overlays = document.querySelectorAll(".overlay");
+            overlays.forEach(overlay =>{
+                overlay.addEventListener('click', (event)=>{
+                    closePopup(event.target.id);
+                })
+            })
+
         </script>
     </body>
 </html>
