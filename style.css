@@ -1274,6 +1274,19 @@ body{
     margin-top: 20px;
     color: white;
 }
+.popup-description-section h1.popup-title-decorated{
+    position: relative;
+    transform: translateX(117px);
+    margin-top: 80px;
+    font-size: 40px !important;
+    padding-block: 0;
+}
+.popup-description-section h1.popup-title-decorated .title-decoration{
+    position: absolute;
+    width: 152px;
+    bottom: 40%;
+    right: 92%;
+}
 
 .popup-description{
     font-size: 16px;
@@ -1331,6 +1344,7 @@ body{
     object-fit: cover;
     inset: 0;
     height: 100%;
+    width: 100%;
     z-index: 0;
     display: flex;
     justify-content: center;
