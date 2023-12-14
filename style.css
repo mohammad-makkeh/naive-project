@@ -105,8 +105,10 @@ body{
 }
 
 .Nav-elements-home {
-    margin-top: 10px;
-    padding: 0 20px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    padding: 0 5px;
 }
 
 .Nav-elements-home a {
@@ -1030,6 +1032,7 @@ body{
     font-size: 40px;
     width: 100%;
     overflow: hidden;
+    margin-top: 0;
 } 
 .section-title-popup::after {
     content: "";
@@ -1268,7 +1271,7 @@ body{
     background-color: blue;
     font-size: 28px !important;
     width: fit-content;
-    font-weight: 800;
+    font-weight: 900;
     padding: 8px;
     margin: 0;
     margin-top: 20px;
@@ -1419,6 +1422,11 @@ body{
     padding: 8px 10px;
     margin-inline: auto;
 }
+.form-popup-header h2{
+    margin:0;
+    font-weight: 800;
+    font-size: 20px !important;
+}
 
 .form-body{
     display: flex;
@@ -1439,16 +1447,18 @@ body{
 }
 
 .form-label{
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: bold  !important;
+    font-size: 18px  !important;
+    color: black !important;
 }
 
 .form-input{
-    padding: 6px 10px;
-    border: 1px solid grey;
-    width: 100%;
-    font-size: 18px;
-    box-shadow: 0 3px 4px #0005;
+    padding: 6px 10px !important;
+    border: 1px solid grey  !important;
+    width: 100%  !important;
+    font-size: 18px  !important;
+    box-shadow: 0 3px 4px #0005  !important;
+    height: fit-content !important;
 }
 
 .form-input:focus{
@@ -1466,20 +1476,22 @@ body{
 }
 
 #date-day, #date-month{
-    width: 6ch;
+    width: 6ch !important;
 }
 
 #date-year{
-    width: 12ch;
+    width: 12ch !important;
 }
 
 
 
 .calendar-section-grid{
-    display: grid;
-    align-items: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    gap: 60px;
 }
 
 .calendar-section-grid .home-workshop .section-title-popup{
@@ -1495,5 +1507,6 @@ body{
 }
 .calendar-section-grid .home-workshop .popup-description-section{
     gap: 18px;
+    width: 40ch;
 }
 
